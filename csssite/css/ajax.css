@@ -1,0 +1,40 @@
+.progresso-ajax {
+    position:fixed;
+    top: 0;
+    left: 50%;    /* move the left edge to the center ï¿½ */
+    margin-left:-100px;
+    z-index:9999;
+    width: 200px;
+    background-color:#FAF296;
+    color:black;
+    text-align: center;
+    border: 2px solid #FFE88B;
+    padding:10px;
+    display:none;
+}
+
+#imagem-progresso {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    filter: alpha(opacity=30);
+    -moz-opacity: .30;
+    opacity: .50;
+    margin-top: 87px;
+    background: white url('../img/ajax/carregando.gif') no-repeat 50% 300px;
+    width: 100%;
+    height: 90%;
+}
+
+#imagem-progresso-favorecidos {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    filter: alpha(opacity=30);
+    -moz-opacity: .30;
+    opacity: .50;
+    margin-top: 87px;
+    background: white url('../img/ajax/carregando.gif') no-repeat 50% 150px;
+    width: 100%;
+    height: 81%;
+}

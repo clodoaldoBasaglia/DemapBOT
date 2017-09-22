@@ -1,0 +1,145 @@
+.resultado { margin-top: 20px; }
+
+.resultado table {
+    width: 100% !important;
+    table-layout: fixed;
+    background-color: #EFEFEF;
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
+    border-bottom: 2px solid #408C66;
+}
+
+.resultado table th {
+    background-color: #408C66;
+    color: white;
+    font-weight: bold;
+    padding: 0.3em 0.3em 0.3em 0.4em;
+}
+
+th.bordered {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: none;
+    border-bottom: none;
+}
+
+.resultado table th a, .resultado table th a:visited { color: white; }
+
+.resultado table td {
+    padding: 6px 2px;
+    word-wrap: break-word;
+}
+
+.resultado table.densa td {
+    padding: 2px;
+    word-wrap: break-word;
+}
+
+.resultado table tr:nth-child(even) {
+    background-color: white;
+}
+
+
+.resultado table tr .footer {
+    background-color: #FFFFE4;
+    color: teal;
+    height: auto;
+    text-align: right;
+}
+
+.indicadorMoedaEstrangeira {
+    color:  rgb(0, 128, 128);
+}
+
+.resultado table tr .avisoFavorecidoIntermediario {
+    background-color: #FFFFE4;
+    height: auto;
+    text-align: right;
+}
+
+.resultado th.tituloAgrupador {
+    background: #063;
+    text-align: center;
+}
+
+
+/* TABELA DE DETALHES DE DADOS
+------------------------------------------------------------ */
+
+table.detalhes {
+    width: 100%;
+    border-bottom: 2px solid #408C66;
+    font-size: 11px;
+    font-family: Verdana, sans-serif;
+    background-color: #EFEFEF;
+    margin-bottom: 10px;
+    table-layout: auto;
+}
+
+table.detalhes th {
+    background-color: #408C66;
+    color: white;
+    font-weight: bold;
+    padding: 9px 6px;
+    text-transform: uppercase;
+}
+
+tr.cabecalho-claro {
+    text-align: center !important;
+    vertical-align: middle !important;
+    background-color: #CCE0D5 !important;
+    color: black !important;
+    font-weight: bold !important;
+    padding: 6px 9px !important;
+}
+
+table.detalhes tr:nth-child(even) {
+    background-color: white;
+}
+
+table.detalhes .label, table.detalhes .enfase {
+    font-weight: bold;
+    width: 216px;
+}
+
+table.detalhes .labelSegundaColuna {
+    font-weight: bold;
+    width: 176px;
+}
+
+table.detalhes td {
+    padding: 6px 0 6px 0;
+}
+
+table.detalhes .valor {
+    width: 216px;
+}
+
+table.detalhes-interna {
+    width: 100%;
+    background-color: #D0D0D7;
+    margin: 12px 0 12px 0;
+}
+
+table.detalhes-interna th {
+    background-color: #CCE0D5;
+    color:black;
+    padding: 4px 6px;
+    text-transform: none;
+}
+table.detalhes-interna td {
+    padding: 6px;
+}
+
+table.detalhes-interna tr:nth-child(even) {
+    background-color: #E0E0E4;
+}
+
+table.funcional-programatica .label {
+    padding-left: 10px;
+    width: 204px;
+}
+
+.nome-divergente {
+    color:#ff8400;
+}

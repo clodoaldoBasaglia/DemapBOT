@@ -1,0 +1,150 @@
+/* ############ LINKS ################ */
+a {color: blue; text-decoration:none; }
+a:hover { color: blue; text-decoration:underline; }
+a:visited {color: purple; text-decoration:none; }
+
+/* ############ CABECALHOS ############ */
+h1, h2, h3, h4, h5, h6{
+    /*padding: 5px 0 10px 0;*/
+    padding: 0 0 10px 4px;
+    margin-top: 17px;
+    font-family: Verdana, sans-serif;
+}
+
+h1 {font-size: 14px;  color: rgb(64,140,102); text-transform: uppercase; font-weight: bold;}
+h2 {font-size: 160%;}
+h3 {font-size: 140%;}
+h4 {font-size: 130%;}
+h5 {font-size: 120%;}
+h6 {font-size: 120%;}
+
+/* ############ CLASSES COMUNS ############ */
+p {padding: 5px 0 10px 0; text-align: justify;}
+
+.imgLeft{
+    float: left;
+    padding: 0 6px 3px 0;
+}
+.imgRight{
+    float: right;
+    padding: 0 0 3px 6px;
+}
+
+.alinharDireita { text-align: right !important; }
+.alinharCentro { text-align: center !important; }
+.alinharEsquerda { text-align: left !important; }
+
+/* LAYOUT 
+------------------------------------------------------------------------------------------------*/
+html,body {
+    height: 100%; /* fallback browsers sem calc*/
+    padding-bottom: 0 !important;
+    font-family: Verdana, sans-serif;
+    min-width: 1024px;
+    font-size:11px;
+}
+
+.stickyFooterWrapper {
+    min-height: 100%;
+}
+
+body {
+    /* a barra no IE10 ficava "voando" (acho que por conta do bootstrap). Normalmente, seria interessante, mas como
+    estamos tentando fazer o estilo ficar identico ao do portal velho, temos que desativar.
+    Se nao entendeu do que estou falando, remova o CSS abaixo e veja como a barra de scroll (aa direita) fica
+    "sobre" o site no ie 10. Eh isso que estamos desativando. */
+    -ms-overflow-style: scrollbar;
+}
+
+/* stickyfooter Opera Fix*/
+body:before {
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+    margin-top: -32767px;
+}
+
+.conteudo,.header-content {
+    width: 1009px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.conteudo {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.conteudo table td,
+.conteudo table th {
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: rgb(204,204,204);
+    padding: 0.2em 0.5em 0.2em 0.5em;
+}
+
+.avisoFavorecidoIntermediario {
+    color: rgb(192, 0, 0);
+}
+
+.quadro-resumo {
+    font-size: 11px;
+    font-family: Verdana, Arial, sans-serif;
+    background-color: rgb(245,245,204);
+    padding: 5px;
+}
+
+.quadro-resumo-destaque {
+    background-color: #FAFAA1;
+}
+
+.valor { font-weight: bold; }
+
+.justificado { text-align: justify; }
+
+a button {
+    color:black;
+}
+
+.link-falso {
+    cursor: pointer;
+}
+.link-falso:hover {
+    text-decoration: underline;
+}
+
+.modo-impressao-apenas {
+    display: none;
+}
+/* Remocao dos links que o bootstrap adiciona no modo de impressao */
+@media print {
+    a[href]:after {
+        content: none !important;
+    }
+    html,body {
+        height: initial;
+    }
+    .conteudo {
+        padding-bottom: 0;
+    }
+    .nao-imprimir,.acesso-rapido,.footer {
+        display: none;
+    }
+    .modo-impressao-apenas {
+        display: block;
+    }
+}
+
+
+/* o plugin da CAIXA (e outros bancos) estava adicionando um elemento <object ...> logo apos o <body>, deixando uma faixa branca no
+ peh da pagina, exemplo:
+ <object id="d2131b58-43fb-8aa4-4339-6ab123122a6" width="0" height="0" type="application/gas-events-cef"></object>
+
+ Outros detalhes em http://stackoverflow.com/questions/17138446/what-is-application-gas-events-abn-object-in-wordpress-editor
+
+ O CSS abaixo oculta tal tag, impedindo que ela afete o estilo da pÃ¡gina.
+*/
+object[type^="application/gas-events"] {
+    display: none;
+}
